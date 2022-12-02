@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            font-family: arial;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        #logo {
+            margin: 0 auto;
+            font-size: 35px;
+
+        }
+
+        #menu li {
+            padding: 10px;
+        }
+
+        #social-links li {
+            padding: 10px;
+
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container-box{
+            border: 2px solid #eee;
+            flex-basis: 32%;
+            max-width: 370px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        .container-box img{
+            width: 100%;
+        }
+        .call-to-action a{
+            background-color: grey;
+            color: #fff;
+            padding: 8px 13px;
+            display: block;
+        }
+        .call-to-action{
+            align-self: flex-start;
+            margin-top: auto;
+        }
+
+        #main{
+            display: flex;
+            
+        }
+        aside{
+            padding: 10px;
+            flex: 0 0 20vw;
+            background-color: bisque;
+            
+        }
+        aside ul{
+            list-style: none;
+            padding: 0;
+        }
+        aside ul a{
+            color: rgb(8, 77, 54);
+            padding: 10px;
+            display: block;
+            border-bottom: 1px solid gray;
+        }
+        article{
+            padding: 10px;
+        }
+        footer{
+            background-color: aqua;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="amoazon.html">online booking</a></li>
+                <li><a href="">about</a></li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <a href="">Amazon</a>
+        </div>
+        <nav id="social-links">
+            <ul>
+                <li><a href="">facebook</a></li>
+                <li><a href="">instagram</a></li>
+                <li><a href="">twitter</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <aside class="">
+            <ul>
+                <li><a href="">some links</a></li>
+                <li><a href="">some links</a></li>
+                <li><a href="">some links</a></li>
+                <li><a href="">some links</a></li>
+                <li><a href="">some links</a></li>
+                <li><a href="">some links</a></li>
+            </ul>
+            <img src="data:image/jpeg;base64,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ooooAooooAooooAooooAooooAooooD//2Q==">
+        </aside>
+        <article class="">
+            <h1>Welcome to our website</h1>
+            <p>Amazon.com, is an American multinational technology company focusing on
+                e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence. It has
+                been referred to as "one of the most influential economic and cultural forces in the world", and is one
+                of the world's most valuable brands. It is one of the Big Five American information technology
+                companies, alongside Alphabet, Apple, Meta, and Microsoft.</p>
+            <h2>Sell online</h2>
+            <div class="container">
+                <div class="container-box">
+                    <div class="righr">
+                        <img src="https://www.amzfinder.com/blog/wp-content/uploads/2018/07/How-to-List-Products-on-Amazon-Complete-Guide-for-FBA-Sellers.jpg" alt="" srcset="">
+                    </div>
+                    <div class="title">
+                        <h3>List your products</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Once you have created your Seller Central account, you can make your product available for
+                            sale
+                            on Amazon.in through the listing process. Here’s how to do it: through the listing process.
+                        </p>
+
+                    </div>
+                    <div class="call-to-action">
+                        <a href="">read more</a>
+                    </div>
+                </div>
+                <div class="container-box">
+                    <div class="righr">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFFRlUW2vYzsk2PRoCVwbwYJTVFQ2Y0serRw&usqp=CAU" alt="" srcset="">
+                    </div>
+                    <div class="title">
+                        <h3>Store & Deliver</h3>
+                    </div>
+                    <div class="desc">
+                        <p>As an Amazon.in seller, you need to both store your products and deliver them to your
+                            customer. You can choose to take care of this or let Amazon do it for you.</p>
+
+                    </div>
+                    <div class="call-to-action">
+                        <a href="">read more</a>
+                    </div>
+                </div>
+                <div class="container-box">
+                    <div class="righr">
+                        <img src="https://m.media-amazon.com/images/G/31/amazonone/AmazonOne-AmazonPay2.png ">
+                    </div>
+                    <div class="title">
+                        <h3>Get paid for your sales</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Once you become an Amazon.in seller, you will begin receiving orders. After your account is
+                            verified, your payments for these orders will be deposited in your bank account every 7 days
+                            (minus the Amazon Fees). You can view your settlements anytime on your Seller Central
+                            profile and can contact Seller Support in case of queries.
+                        </p>
+
+                    </div>
+                    <div class="call-to-action">
+                        <a href="">read more</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+    <footer>
+        thank you
+    </footer>
+</body>
+
+</html>
